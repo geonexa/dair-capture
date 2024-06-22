@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource-variable/raleway": "^5.0.20",
     "axios": "^1.7.2",
     "next": "14.2.4",
     "nodemailer": "^6.9.14",
