@@ -98,7 +98,7 @@ const HomePage = () => {
 
 
 
-                <section id="about" class="about-layout2 animated-Progressbars">
+                <section id="about" class="about-layout2 animated-Progressbars" ref={aboutProgressRef}>
                     <div class="container">
 
                         <div class="row about__Text">
