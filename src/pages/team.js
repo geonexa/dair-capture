@@ -12,15 +12,22 @@ import Head from 'next/head'
 import PageHeader from '@/components/PageHeader'
 import HarshulImg from "../../public/images/team/Harshul.jpg"
 import DavidImg from "../../public/images/team/David.jpg"
-import Img1 from "../../public/images/projects/image.jpg"
+import linkedin from "../../public/images/linkedin.png"
 
 
 const AboutPage = () => {
   return (
     <>
-      <Head>
-        <title>Team</title>
-      </Head>
+    <Head>
+                <meta name="description" content="Dair Capture." />
+                <meta name="keywords" content="Dair Capturen" />
+                <meta name="author" content="Dair Capture" />
+                <meta name="copyright" content="Dair Capture" />
+                <meta name="robots" content="follow" />
+                <title>Team | Dair Capture </title>
+            </Head>
+
+
 
       <div className='wrapper'>
         <MainNavbar />
@@ -86,7 +93,7 @@ const AboutPage = () => {
                   <Image src={HarshulImg} alt="about" />
                   <blockquote class="blockquote d-flex align-items-end mb-0">
                     <div class="blockquote__avatar">
-                      <Image src={thumbsImg} alt="thumb" />
+                     <a href='https://www.linkedin.com/in/harshul-thakkar-b494aa76/' target='_blank' ><Image src={linkedin} alt="thumb" /></a>
                     </div>
                     <div class="blockquote__content">
 
@@ -109,10 +116,10 @@ const AboutPage = () => {
                   <Image src={DavidImg} alt="about" />
                   <blockquote class="blockquote d-flex align-items-end mb-0">
                     <div class="blockquote__avatar">
-                      <Image src={thumbsImg} alt="thumb" />
+                    <a href='https://www.linkedin.com/in/durtecho/' target='_blank' ><Image src={linkedin} alt="thumb" /></a>
                     </div>
                     <div class="blockquote__content">
-                      <h4 class="blockquote__title mb-0"> David Urtecho
+                      <h4 class="blockquote__title mb-0"> David Urtecho, MBA
                       </h4>
                     </div>
                   </blockquote>
@@ -125,7 +132,7 @@ const AboutPage = () => {
                     <div class="divider divider-primary mr-30"></div>
                     {/* <h2 class="heading__subtitle mb-0">Timely Service Delivery & Incident Resolutions!! </h2> */}
                   </div>
-                  <h3 class="heading__title mb-40">  David Urtecho <br />CMO
+                  <h3 class="heading__title mb-40">  David Urtecho, MBA <br />CMO
                   </h3>
 
 
@@ -134,7 +141,8 @@ const AboutPage = () => {
                 <div class="position-relative offset-xl-1">
                   <i class="icon-quote"></i>
                   <p class="mb-40">
-                    David Urtecho is a Business Development professional specializing in digital marketing and strategic management. He has more than three years of experience in consulting and private equity. He is currently responsible for strategic initiatives at Sunstone Management, where he focuses on start-up growth and investment evaluation. His responsibilities include market research, financial modeling, risk assessment, and portfolio management. He previously worked as a Strategy & Innovation Consultant at EDC, where he helped improve efficiencies for early-stage life science companies. He also has experience as an entrepreneur in FedTech&apos;s startup studio, where he commercialized technology from national labs. He has an M.A. in Bioethics from Loyola Marymount University and a B.A. in Philosophy and Religious Studies from Cal State Fullerton.
+                    David Urtecho is a Business Development professional specializing in digital marketing and strategic management. He has more than three years of experience in consulting and private equity. 
+                     His responsibilities include market research, financial modeling, risk assessment, and portfolio management. He also has experience as an entrepreneur in FedTech&apos;s startup studio, where he commercialized technology from national labs. He has an M.A. in Bioethics from Loyola Marymount University and a B.A. in Philosophy and Religious Studies from Cal State Fullerton.
                   </p>
 
 

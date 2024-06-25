@@ -15,6 +15,11 @@ import Img3 from "../../public/images/technology/3.jpg"
 import Img4 from "../../public/images/technology/4.jpg"
 import Img5 from "../../public/images/technology/5.jpg"
 import Img6 from "../../public/images/technology/6.jpg"
+import reporting from "../../public/images/technology/reporting.png"
+import measurement from "../../public/images/technology/measurement.png"
+import monitoring from "../../public/images/technology/monitor.png"
+import verification from "../../public/images/technology/verification.png"
+
 
 import Image from "next/image";
 
@@ -105,7 +110,7 @@ const HomePage = () => {
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
 
                                 <div class="heading mb-40">
-                                    
+
                                     <h3 class="heading__title"> Why Dair Capture? </h3>
                                     <div class="d-flex align-items-center  mb-40">
                                         <div class="divider divider-primary mr-30 "></div>
@@ -117,9 +122,9 @@ const HomePage = () => {
 
 
                                     <i class="icon-quote"></i>
-                                   
 
-                                    <p style={{color:"black", fontWeight:600, textAlign:"justify"}}>At Dair Capture, we are dedicated to revolutionizing the way we address carbon emissions. Our cutting-edge technology offers a sustainable, energy-efficient solution for capturing and transforming CO2. By leveraging renewable resources and our unique regeneration method, we provide an innovative approach to closing the carbon cycle, making a positive impact on the environment and driving the transition to a greener future. Choose Dair Capture for reliable, advanced, and eco-friendly carbon capture solutions.</p>
+
+                                    <p style={{ color: "black", fontWeight: 600, textAlign: "justify" }}>At Dair Capture, we are dedicated to revolutionizing the way we address carbon emissions. Our cutting-edge technology offers a sustainable, energy-efficient solution for capturing and transforming CO2. By leveraging renewable resources and our unique regeneration method, we provide an innovative approach to closing the carbon cycle, making a positive impact on the environment and driving the transition to a greener future. Choose Dair Capture for reliable, advanced, and eco-friendly carbon capture solutions.</p>
 
                                     {/* <p>At Dair Capture, we pride ourselves on pioneering cutting-edge technology in the realm of carbon capture and utilization.
                                         Our novel regeneration method sets us apart, offering unprecedented energy efficiency and the ability to transform captured CO2 into valuable products.
@@ -292,99 +297,12 @@ const HomePage = () => {
                     </div>
                 </section> */}
 
-                {/* <section id="awards" class="awards pb-70">
-                    <div class="container">
-                        <div class="row heading mb-60">
-                            <div class="col-12 d-flex align-items-center mb-20">
-                                <div class="divider divider-primary mr-30"></div>
-                                <h2 class="heading__subtitle mb-0">
-                                    Timely Service Delivery & Incident Resolutions!!{" "}
-                                </h2>
-                            </div>
-                            <div class="col-sm-12 col-md-12 col-lg-5">
-                                <h3 class="heading__title">
-                                    Trusted by the world&apos;s best organizations for 21 years.
-                                </h3>
-                            </div>
-                            <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-2">
-                                <p class="heading__desc">
-                                    SmartData been helping organizations and Providers through the
-                                    World to manage their IT with our unique approach to
-                                    technology management and consultancy solutions.{" "}
-                                </p>
-                                <a href="#" class="btn btn__primary btn__icon mt-20">
-                                    <span>Get Started</span>
-                                    <i class="icon-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row awards-wrapper">
-                            <div class="col-sm-6 col-md-6 col-lg-3">
-                                <div class="fancybox-item">
-                                    <div class="fancybox__icon-img">
-                                        <Image src={Img1} alt="icon" />
-                                    </div>
-                                    <div class="fancybox__content">
-                                        <h4 class="fancybox__title">CSS Design Award</h4>
-                                        <p class="fancybox__desc">
-                                            A web design & development award platform for digital
-                                            folk, UI/UX peeps and inspiring leaders of the web.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3">
-                                <div class="fancybox-item">
-                                    <span class="pinned-ribbon"></span>
-                                    <div class="fancybox__icon-img">
-                                        <Image src={Img1} alt="icon" />
-                                    </div>
-                                    <div class="fancybox__content">
-                                        <h4 class="fancybox__title">W3 Design Award</h4>
-                                        <p class="fancybox__desc">
-                                            Awards celebrates digital by honoring outstanding
-                                            Websites, Web Marketing, Video, Sites, Apps & Social
-                                            content.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3">
-                                <div class="fancybox-item">
-                                    <div class="fancybox__icon-img">
-                                        <Image src={Img1} alt="icon" />
-                                    </div>
-                                    <div class="fancybox__content">
-                                        <h4 class="fancybox__title">The FWA Award</h4>
-                                        <p class="fancybox__desc">
-                                            Showcasing innovation every day since 2000, our mission is
-                                            to showcase cutting edge creativity, regardless
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3">
-                                <div class="fancybox-item">
-                                    <div class="fancybox__icon-img">
-                                        <Image src={Img1} alt="icon" />
-                                    </div>
-                                    <div class="fancybox__content">
-                                        <h4 class="fancybox__title">WWW Awards</h4>
-                                        <p class="fancybox__desc">
-                                            The awards that recognize the talent and effort of the
-                                            best web designers, developers and agencies in the world.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
+                
 
 
 
 
-<section className="portfolio-grid portfolio-grid-carousel pb-40">
+                <section className="portfolio-grid portfolio-grid-carousel pb-40">
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-12 col-md-12 col-lg-6">
@@ -393,7 +311,7 @@ const HomePage = () => {
                                         <div className="divider divider-primary mr-30"></div>
                                         <h2 className="heading__subtitle mb-0">Our Technology</h2>
                                     </div>
-                                    <h3 className="heading__title mb-0">Where innovation meets sustainability, and the future is carbon-neutral.</h3>
+                                    <h3 className="heading__title mb-0">Our DAC <span style={{ color:"#0096FF", fontWeight:700}}>&quot;RESET&quot;</span> approach</h3>
                                 </div>
                             </div>
                         </div>
@@ -409,7 +327,7 @@ const HomePage = () => {
 
                                         </div>
                                         <h4 className="portfolio__title">
-                                        Renewable
+                                            <span style={{fontSize:"42px", color:"#0096FF", fontWeight:600}}>R</span>enewable
                                         </h4>
                                         <p className="portfolio__desc">Our Direct Air Capture (DAC) technology is designed to operate entirely on renewable resources. Unlike traditional methods, our DAC system does not rely on natural gas or steam, ensuring a sustainable and environmentally friendly approach to carbon capture.</p>
                                     </div>
@@ -427,7 +345,7 @@ const HomePage = () => {
 
                                         </div>
                                         <h4 className="portfolio__title">
-                                        Energy-Efficient
+                                        <span style={{fontSize:"42px", color:"#0096FF", fontWeight:600}}>E</span>nergy-Efficient
                                         </h4>
                                         <p className="portfolio__desc">Energy efficiency is at the core of our regeneration method. Our unique approach significantly reduces the energy required for the DAC process, making it more sustainable and cost-effective. This energy-saving advantage is a game-changer in the field of carbon capture.</p>
                                     </div>
@@ -445,7 +363,7 @@ const HomePage = () => {
 
                                         </div>
                                         <h4 className="portfolio__title">
-                                        Stable Sorbent
+                                        <span style={{fontSize:"42px", color:"#0096FF", fontWeight:600}}>S</span>table Sorbent
                                         </h4>
                                         <p className="portfolio__desc">Our technology features an extremely high stability of the sorbent due to our innovative regeneration method. This stability ensures the long-term reliability and effectiveness of our DAC system, providing consistent performance over time.</p>
                                     </div>
@@ -463,7 +381,7 @@ const HomePage = () => {
 
                                         </div>
                                         <h4 className="portfolio__title">
-                                        Eco-System
+                                        <span style={{fontSize:"42px", color:"#0096FF", fontWeight:600}}>E</span>co-System
                                         </h4>
                                         <p className="portfolio__desc">The eco-system of our DAC is well-established and integrates seamlessly with existing infrastructure. This compatibility enhances the scalability and adoption of our technology, enabling wider implementation across various industries and applications.</p>
                                     </div>
@@ -481,7 +399,7 @@ const HomePage = () => {
 
                                         </div>
                                         <h4 className="portfolio__title">
-                                        Transforming CO2
+                                        <span style={{fontSize:"42px", color:"#0096FF", fontWeight:600}}>T</span>ransforming CO2
                                         </h4>
                                         <p className="portfolio__desc">Beyond sequestration, our DAC technology excels in transforming captured CO2 into value-added products. This capability opens up new possibilities for utilizing CO2 in various industries, creating economic value while addressing environmental challenges.</p>
                                     </div>
@@ -489,31 +407,95 @@ const HomePage = () => {
 
                             </div>
 
-                            <div className="col-lg-4" >
-                                <div className="portfolio-item">
-                                    <div className="portfolio__img">
-                                        <Image src={Img6} alt="portfolio img" />
-                                    </div>
-                                    <div className="portfolio__content">
-                                        <div className="portfolio__cat">
+                            
+                        </div>
+                    </div>
+                </section>
 
-                                        </div>
-                                        <h4 className="portfolio__title">
-                                        Measurement, Monitoring, Reporting, and Verification
-                                        (MMRV) 
-                                        </h4>
-                                        <p className="portfolio__desc">MMRV is a multi-step process used to account for the greenhouse gas (GHG) emissions
-                                        and emissions intensity associated with specific sources across the value chain.</p>
+
+                <section id="awards" class="awards pb-70">
+                    <div class="container">
+                        <div class="row heading mb-60">
+                            <div class="col-12 d-flex align-items-center mb-20">
+                                <div class="divider divider-primary mr-30"></div>
+                                <h2 class="heading__subtitle mb-0">
+                                    Timely Service Delivery & Incident Resolutions!!{" "}
+                                </h2>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-5">
+                                <h3 class="heading__title">
+                                Measurement, Monitoring, Reporting, and Verification (MMRV)
+                                </h3>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-2">
+                                <p class="heading__desc">
+                                MMRV is a multi-step process used to account for the greenhouse gas (GHG) emissions and emissions intensity associated with specific sources across the value chain.{" "}
+                                </p>
+                                {/* <a href="#" class="btn btn__primary btn__icon mt-20">
+                                    <span>Get Started</span>
+                                    <i class="icon-arrow-right"></i>
+                                </a> */}
+                            </div>
+                        </div>
+                        <div class="row awards-wrapper">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="fancybox-item">
+                                    <div class="fancybox__icon-img">
+                                        <Image src={measurement} alt="icon" />
+                                    </div>
+                                    <div class="fancybox__content">
+                                        <h4 class="fancybox__title">Measurement</h4>
+                                        {/* <p class="fancybox__desc">
+                                            A web design & development award platform for digital
+                                            folk, UI/UX peeps and inspiring leaders of the web.
+                                        </p> */}
                                     </div>
                                 </div>
-
                             </div>
-
-
-
-
-
-
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="fancybox-item">
+                                    <span class="pinned-ribbon"></span>
+                                    <div class="fancybox__icon-img">
+                                        <Image src={monitoring} alt="icon" />
+                                    </div>
+                                    <div class="fancybox__content">
+                                        <h4 class="fancybox__title">Monitoring</h4>
+                                        {/* <p class="fancybox__desc">
+                                            Awards celebrates digital by honoring outstanding
+                                            Websites, Web Marketing, Video, Sites, Apps & Social
+                                            content.
+                                        </p> */}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="fancybox-item">
+                                    <div class="fancybox__icon-img">
+                                        <Image src={reporting} alt="icon" />
+                                    </div>
+                                    <div class="fancybox__content">
+                                        <h4 class="fancybox__title">Reporting</h4>
+                                        {/* <p class="fancybox__desc">
+                                            Showcasing innovation every day since 2000, our mission is
+                                            to showcase cutting edge creativity, regardless
+                                        </p> */}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="fancybox-item">
+                                    <div class="fancybox__icon-img">
+                                        <Image src={verification} alt="icon" />
+                                    </div>
+                                    <div class="fancybox__content">
+                                        <h4 class="fancybox__title">Verification</h4>
+                                        {/* <p class="fancybox__desc">
+                                            The awards that recognize the talent and effort of the
+                                            best web designers, developers and agencies in the world.
+                                        </p> */}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

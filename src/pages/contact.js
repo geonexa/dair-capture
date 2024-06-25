@@ -67,9 +67,16 @@ const ContactPage = () => {
 
     return (
         <>
-            <Head>
-                <title>Contact Us</title>
+        <Head>
+                <meta name="description" content="Dair Capture." />
+                <meta name="keywords" content="Dair Capturen" />
+                <meta name="author" content="Dair Capture" />
+                <meta name="copyright" content="Dair Capture" />
+                <meta name="robots" content="follow" />
+                <title>Contact Us | Dair Capture </title>
             </Head>
+
+
 
 
             <div className='wrapper'>

@@ -30,9 +30,16 @@ const ProjectsPage = () => {
     return (
         <>
 
-            <Head>
-                <title>Projects</title>
+<Head>
+                <meta name="description" content="Dair Capture." />
+                <meta name="keywords" content="Dair Capturen" />
+                <meta name="author" content="Dair Capture" />
+                <meta name="copyright" content="Dair Capture" />
+                <meta name="robots" content="follow" />
+                <title>Technology | Dair Capture </title>
             </Head>
+
+  
 
             <div className='wrapper'>
                 <MainNavbar />
@@ -112,7 +119,7 @@ const ProjectsPage = () => {
 
 
 
-                <section className="portfolio-grid portfolio-grid-carousel pb-40">
+                {/* <section className="portfolio-grid portfolio-grid-carousel pb-40">
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-12 col-md-12 col-lg-6">
@@ -244,7 +251,7 @@ const ProjectsPage = () => {
 
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 
 
