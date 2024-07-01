@@ -12,9 +12,11 @@ import PageHeader from '@/components/PageHeader'
 
 
 const ContactPage = () => {
-    const [formData, setFormData] = useState({ name: '', email: '', subject: 'Portfolio Website Contact Form', phone: '', message: '' });
+    const [formData, setFormData] = useState({ name: '', email: '', subject: '', phone: '', message: '' });
     const [isLoading, setIsLoading] = useState(false);
     const [message, setMessage] = useState("")
+
+    
 
 
     useEffect(() => {
@@ -55,7 +57,7 @@ const ContactPage = () => {
             }
 
             setIsLoading(false);
-            setFormData({ name: '', email: '', subject: 'GeoNexa New Message', phone: '', message: '' });
+            setFormData({ name: '', email: '', subject: '', phone: '', message: '' });
             setMessage('Message Sent Successfully');
         } catch (error) {
             setIsLoading(false);
@@ -101,11 +103,13 @@ const ContactPage = () => {
                                         </div>
                                         <div className="col-sm-6 col-md-6 col-lg-6">
                                             <div className="form-group">
-                                                <input type="text" className="form-control" placeholder="Name" name="name"
-                                                    value={formData.name}
-                                                    onChange={handleChange}
-
-                                                    required />
+                                                <input 
+                                                type="text" className="form-control" 
+                                                 name='name'
+                                                 placeholder="Your Name"
+                                                 value={formData.name}
+                                                 required
+                                                 onChange={handleChange} />
                                             </div>
                                         </div>
                                         <div className="col-sm-6 col-md-6 col-lg-6">
@@ -127,7 +131,11 @@ const ContactPage = () => {
                                         <div className="col-sm-6 col-md-6 col-lg-6">
                                             <div className="form-group">
                                                 <input type="text" className="form-control" placeholder="Subject"
-                                                    name="subject" />
+                                                    name="subject" 
+                                                    value={formData.subject}
+                                                    onChange={handleChange}
+                                                    required
+                                                    />
                                             </div>
                                         </div>
                                         <div className="col-12">
@@ -135,13 +143,14 @@ const ContactPage = () => {
                                                 <textarea className="form-control" placeholder="Message"
                                                     name="message"
                                                     value={formData.message}
-                                                    onChange={handleChange}></textarea>
+                                                    onChange={handleChange} required></textarea>
                                             </div>
 
                                             <button onClick={onSubmit}
                                                 disabled={isLoading}
                                                 style={{ opacity: isLoading ? 0.5 : 1, pointerEvents: isLoading ? 'none' : 'auto' }}
-                                                type="submit" className="btn btn__primary btn__xhight mt-10">Send Message </button>
+                                                type="submit" className="btn btn__primary btn__xhight mt-10">
+                                                     {isLoading ? 'Sending...' : 'Send Message'}  </button>
 
 
                                             <div className="contact-result">
