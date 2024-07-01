@@ -5,12 +5,14 @@ import Image from 'next/image'
 import LightLogo from "../../public/images/logo/logo-light.png"
 import DarkLogo from "../../public/images/logo/logo-dark.png"
 import { useRouter } from 'next/router'
+import { useTechnologyContext } from '@/context/TechnologyContext'
 
 const MainNavbar = () => {
     const router = useRouter();
     const [showMenu, setShowMenu] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
     const [showDropdown, setShowDropdown] = useState(false);
+    const { technologyRef } = useTechnologyContext();
 
     const handleToggle = () => {
         setShowMenu(!showMenu);
@@ -20,6 +22,24 @@ const MainNavbar = () => {
     const handleNavLinkClick = (event) => {
         event.preventDefault();
         setShowDropdown(!showDropdown)
+    };
+
+
+    const navigateToTechnology = (e) => {
+        e.preventDefault();
+        if (router.pathname !== "/") {
+            router.push("/").then(() => {
+                technologyRef.current.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            });
+        } else {
+            technologyRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
     };
 
     useEffect(() => {
@@ -64,7 +84,7 @@ const MainNavbar = () => {
                         <ul className="navbar-nav ml-auto">
                             <li className="nav__item">
                                 <Link href="/"
-                                    className={router.pathname == "/" ? "active nav__item-link" : "nav__item-link"}
+                                    className={router.pathname == "/" ? " nav__item-link" : "nav__item-link"}
                                 >
                                     Home
                                 </Link>
@@ -73,17 +93,16 @@ const MainNavbar = () => {
 
                            
 
-
-
                             <li className="nav__item">
-                                <Link href="/technology"
-                                className={router.pathname == "/technology" ? "active nav__item-link" : "nav__item-link"}
-                                >Technology</Link>
+                            <Link href="#" onClick={navigateToTechnology} 
+                            className={router.pathname == "/" ? " nav__item-link" : "nav__item-link"}>
+                                    Technology
+                                </Link>
                             </li>
 
                             <li className="nav__item">
                                 <Link href="/team"
-                                    className={router.pathname == "/team" ? "active nav__item-link" : "nav__item-link"}
+                                    className={router.pathname == "/team" ? " nav__item-link" : "nav__item-link"}
                                 >
                                     Team
                                 </Link>
@@ -91,7 +110,7 @@ const MainNavbar = () => {
                             
                             <li className="nav__item">
                                 <Link href="/contact"
-                                    className={router.pathname == "/contact" ? "active nav__item-link" : "nav__item-link"}
+                                    className={router.pathname == "/contact" ? " nav__item-link" : "nav__item-link"}
                                 >
                                     Contact </Link>
                             </li>

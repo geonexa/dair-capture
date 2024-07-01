@@ -4,7 +4,7 @@ import MainNavbar from "@/components/MainNavbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 
-import BackgroundIMg from "../../public/images/backgroundVideo.gif";
+
 // import Img1 from "../../public/images/projects/image.jpg";
 import AboutImg1 from "../../public/images/about/about-3.jpg";
 
@@ -14,17 +14,20 @@ import Img2 from "../../public/images/technology/2.jpg"
 import Img3 from "../../public/images/technology/3.jpg"
 import Img4 from "../../public/images/technology/4.jpg"
 import Img5 from "../../public/images/technology/5.jpg"
-import Img6 from "../../public/images/technology/6.jpg"
 import reporting from "../../public/images/technology/reporting.png"
 import measurement from "../../public/images/technology/measurement.png"
 import monitoring from "../../public/images/technology/monitor.png"
 import verification from "../../public/images/technology/verification.png"
-
+import About4 from "../../public/images/about/about-4.jpg"
+import About2 from "../../public/images/about/about-2.jpg"
 
 import Image from "next/image";
+import { useTechnologyContext } from "@/context/TechnologyContext";
 
 const HomePage = () => {
     const aboutProgressRef = useRef(null);
+
+    const { technologyRef } = useTechnologyContext();
 
     return (
         <>
@@ -125,6 +128,10 @@ const HomePage = () => {
 
 
                                     <p style={{ color: "black", fontWeight: 600, textAlign: "justify" }}>At Dair Capture, we are dedicated to revolutionizing the way we address carbon emissions. Our cutting-edge technology offers a sustainable, energy-efficient solution for capturing and transforming CO2. By leveraging renewable resources and our unique regeneration method, we provide an innovative approach to closing the carbon cycle, making a positive impact on the environment and driving the transition to a greener future. Choose Dair Capture for reliable, advanced, and eco-friendly carbon capture solutions.</p>
+
+
+                      
+
 
                                     {/* <p>At Dair Capture, we pride ourselves on pioneering cutting-edge technology in the realm of carbon capture and utilization.
                                         Our novel regeneration method sets us apart, offering unprecedented energy efficiency and the ability to transform captured CO2 into valuable products.
@@ -302,7 +309,7 @@ const HomePage = () => {
 
 
 
-                <section className="portfolio-grid portfolio-grid-carousel pb-40">
+                <section className="portfolio-grid portfolio-grid-carousel pb-40" ref={technologyRef}>
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-12 col-md-12 col-lg-6">
@@ -419,7 +426,7 @@ const HomePage = () => {
                             <div class="col-12 d-flex align-items-center mb-20">
                                 <div class="divider divider-primary mr-30"></div>
                                 <h2 class="heading__subtitle mb-0">
-                                    Timely Service Delivery & Incident Resolutions!!{" "}
+                                Innovative Carbon Capture Technology{" "}
                                 </h2>
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg-5">
@@ -496,6 +503,74 @@ const HomePage = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* <section id="about" class="about-layout2 animated-Progressbars">
+                    <div class="container">
+
+                        <div class="row about__Text">
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+
+                                <div class="heading mb-40">
+                                    <div class="d-flex align-items-center mb-20">
+                                        <div class="divider divider-primary mr-30"></div>
+                                        <h2 class="heading__subtitle mb-0">Innovative Carbon Capture Technology </h2>
+                                    </div>
+                                    <h3 class="heading__title mb-40"> Transforming CO2 with Energy-Efficient and Sustainable Solutions
+                                    </h3>
+                                </div>
+
+                                <div class=" position-relative">
+
+
+                                    <i class="icon-quote"></i>
+
+
+                                    <p>At Dair Capture, we are committed to closing the carbon cycle and driving the transition to a sustainable future. Our innovative technology is at the forefront of this mission, delivering energy-efficient, renewable, and transformative solutions for carbon capture and utilization.</p>
+
+                                    <p>At Dair Capture, we pride ourselves on pioneering cutting-edge technology in the realm of carbon capture and utilization.
+                                        Our novel regeneration method sets us apart, offering unprecedented energy efficiency and the ability to transform captured CO2 into valuable products.
+                                        Here&apos;s how our technology stands out: </p>
+                                </div>
+
+
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 offset-xl-1">
+                                <Image src={About2} alt="about" />
+
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+
+                <section class="blog blog-single pt-50 pb-70">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="post-item mb-0">
+                                    <div class="post__content">
+                                        <h1 class="post__title">
+                                            Building the Future of Direct Air Capture
+                                        </h1>
+                                        <div class="post__desc">
+                                            <p style={{ color: "black", fontWeight: 600, textAlign: "justify" }}>Direct Air Capture (DAC) is a pioneering carbon removal technology that utilizes advanced industrial equipment to filter CO2 directly from the atmosphere. This method is not only measurable and verifiable but also highly adaptable, allowing for integration with diverse storage solutions to ensure the permanent removal of CO2. By implementing DAC technology, we are taking significant strides toward mitigating climate change and building a sustainable future.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="post-item mb-0">
+                                    <div class="">
+                                        <Image src={About4} alt="blog image" />
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </section>
