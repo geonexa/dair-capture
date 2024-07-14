@@ -170,7 +170,7 @@ const HomePage = () => {
 
                                 <div class="heading mb-40">
 
-                                    <h3 class="heading__title"> Why Dair Capture? </h3>
+                                    <h3 class="heading__title"> Why Dair Capture </h3>
                                     <div class="d-flex align-items-center  mb-40">
                                         <div class="divider divider-primary mr-30 "></div>
                                         <h2 class="heading__subtitle mb-0">Innovating for a Carbon-Neutral World</h2>
